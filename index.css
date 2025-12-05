@@ -1,0 +1,414 @@
+body {
+    background-color: rgb(243, 237, 239);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #8B4513, #b97629);
+    padding: 30px;
+}
+
+.logo{
+    color: black;
+    gap: 15px;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    gap: 15px;
+    justify-content: center;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+a {
+    padding: 10px;
+    justify-content: center;
+}
+
+header p {
+    font-weight: bolder;
+    gap: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bienvenue {
+    background: url('https://www.azuremagazine.com/wp-content/uploads/2025/10/DX24-Karola-Braga-8-Lance-Gerber-3000px.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.div_container {
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+.h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.bienvenue p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    color: #f8f5f0;
+}
+
+.button1 {
+    background: linear-gradient(45deg, #8B4513, #b97629);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    border: 2px solid #fff;
+}
+
+.button1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0;
+}
+
+.button1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #b97629, #8B4513);
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.1);
+    margin-bottom: 2rem;
+}
+
+section h1 {
+    color: #8B4513;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 3px solid #b97629;
+    padding-bottom: 0.5rem;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    text-align: justify;
+    color: #5a4a3a;
+}
+
+button {
+    background: linear-gradient(45deg, #8B4513, #b97629);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto;
+    color: white;
+    font-weight: 500;
+    border: 2px solid #8B4513;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0;
+
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+    background: linear-gradient(45deg, #b97629, #8B4513);
+}
+
+.formulaire-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid #b97629;
+}
+
+.formulaire-container h2 {
+    color: #8B4513;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.connexion-form {
+    background: white;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #5a4a3a;
+    font-size: 1rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #b97629;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f8f5f0;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #8B4513;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(185, 118, 41, 0.3);
+}
+
+.form-group input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.separator {
+    height: 1px;
+    background-color: #b97629;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.separator::before {
+    content: "---";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 0 10px;
+    color: #b97629;
+    font-size: 0.9rem;
+}
+
+.connexion-btn {
+    background: linear-gradient(45deg, #8B4513, #b97629);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.connexion-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+    background: linear-gradient(45deg, #b97629, #8B4513);
+}
+
+.forgot-password {
+    text-align: center;
+}
+
+.forgot-password a {
+    color: #8B4513;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    padding: 0;
+}
+
+.forgot-password a:hover {
+    color: #b97629;
+    text-decoration: underline;
+}
+
+
+footer {
+    background: linear-gradient(135deg, #8B4513, #b97629);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+footer h1 {
+    color: white;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: all 0.3s ease;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+}
+
+footer a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 2rem;
+    color: #2f2504;
+    font-size: large;
+    font-weight: bold;
+}
+
+.footer1 {
+    margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+    .menu-btn { display: block;}
+
+    ul { 
+        display: none;
+        flex-direction: column;
+        background: white;
+    }
+
+    ul.active { display: block;}
+
+        header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .h1 {
+        font-size: 2.5rem;
+    }
+
+    .bienvenue {
+        padding: 4rem 1rem;
+        min-height: 60vh;
+    }
+
+    section {
+        padding: 2rem 1rem;
+        margin: 1rem;
+    }
+
+    .div {
+        height: 300px;
+    }
+
+    .slider2 {
+        padding: 8px 15px;
+    }
+
+    .label {
+        width: 12px;
+        height: 12px;
+    }
+
+    form {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    fieldset {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .h1 {
+        font-size: 2rem;
+    }
+
+    .bienvenue p {
+        font-size: 1rem;
+    }
+
+    section h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .div {
+        height: 200px;
+    }
+
+    .slider2 {
+        gap: 5px;
+        padding: 5px 10px;
+    }
+
+    .label {
+        width: 10px;
+        height: 10px;
+    }
+
+    footer a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}

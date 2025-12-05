@@ -1,0 +1,170 @@
+body {
+    background-color: rgb(243, 237, 239);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #8B4513, #b97629);
+    padding: 30px;
+}
+
+.logo{
+    color: black;
+    gap: 15px;
+    justify-content: center;
+    font-weight: bolder;
+
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    gap: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+a {
+    padding: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    margin: 0;
+    background:url("https://i.natgeofe.com/n/13a5328b-476a-43eb-8e66-be5a93e24ead/MM10231_R022_FR007.jpg") center/cover fixed no-repeat;
+}
+
+.section-title {
+    text-align:center;
+    font-size:2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    margin:0;
+    text-shadow:0 3px 15px rgba(0,0,0,0.5);
+    padding-top: 25px;
+}
+
+.cards {
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:20px;
+    justify-content:center;
+}
+
+.card {
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(6px);
+    width:300px;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 6px 25px rgba(0,0,0,0.35);
+    transition:0.35s;
+    cursor:pointer;
+}
+   
+.card:hover {
+    transform:translateY(-8px);
+    background:rgba(255,255,255,0.18);
+    box-shadow:0 12px 35px rgba(0,0,0,0.45);
+}
+
+.card img {
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:14px;
+    margin-bottom:12px;
+}
+
+.card h3 {
+    margin:0;
+    font-size:1.3rem;
+}
+
+.card p {
+    font-size:0.95rem;
+    margin-top:8px;
+    opacity:0.85;
+}
+
+.event-section {
+    max-width:1000px;
+    margin:50px auto;
+    padding:20px;
+    background:rgba(255,255,255,0.14);
+    border-radius:20px;
+    backdrop-filter:blur(6px);
+    box-shadow:0 6px 25px rgba(0,0,0,0.35);
+}
+
+.event-section img {
+    width:100%;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+.event-section p{
+    font-size:1.1rem;
+    line-height:1.7;
+}
+
+@media(max-width:800px) {
+    header h1{font-size:2.2rem;}
+    header p{font-size:1rem;}
+    .card{width:100%;}
+}
+
+footer {
+    background: linear-gradient(135deg, #8B4513, #b97629);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+footer h1 {
+    color: white;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: all 0.3s ease;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+}
+
+footer a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 2rem;
+    color: #2f2504;
+    font-size: large;
+    font-weight: bold;
+}
+
+.footer1 {
+    margin-bottom: 25px;
+}

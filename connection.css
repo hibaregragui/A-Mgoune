@@ -1,0 +1,166 @@
+body {
+    background-color: rgb(243, 237, 239);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #8B4513, #b97629);
+    padding: 30px;
+}
+
+.logo{
+    color: black;
+    gap: 15px;
+    justify-content: center;
+    font-weight: bolder;
+
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    gap: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+a {
+    padding: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 2rem;
+}
+
+.login-form {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #8B4513;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #b97629;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(135deg, #8B4513, #b97629);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background: linear-gradient(135deg, #b97629, #8B4513);
+    transform: translateY(-2px);
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.forgot-password a {
+    color: #8B4513;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+    color: #b97629;
+    text-decoration: underline;
+}
+
+footer {
+    background: linear-gradient(135deg, #8B4513, #b97629);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+footer h1 {
+    color: white;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: all 0.3s ease;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+}
+
+footer a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 2rem;
+    color: #2f2504;
+    font-size: large;
+    font-weight: bold;
+}
+
+.footer1 {
+    margin-bottom: 25px;
+}
